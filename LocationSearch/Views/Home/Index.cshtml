@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Locations searcher";
+}
+
+<div ng-app="LocationSearchApp">
+    <div ng-controller="LocationSearchController" class="panel-body row">
+        <div class="col-sm-6">
+            <button class="btn-info" ng-click="getData()">Load locations</button>
+            <table>
+                <tr ng-repeat="location in allLocations">
+                    <td style="width: 100px; height: 30px">
+                        <p>{{location.locationId}}</p>
+                    </td>
+                    <td style="width: 100px; height: 30px">
+                        <p>{{location.locationName}}</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" ng-model="locationForSearch"></input>
+                    </div>
+                    <div class="col-sm-offset-2 col-sm-2">
+                        <button type="submit" class="btn btn-default" ng-click="searchChidren()">Search children</button>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li ng-repeat="location in children">{{location.locationName}}</li>
+                        <li ng-hide="hideEmptyResult">Node not found</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+</div>

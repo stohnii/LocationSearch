@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<ArrayOfLocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Location>
+    <LocationId>1</LocationId>
+    <LocationName>World</LocationName>
+  </Location>
+  <Location>
+    <LocationId>2</LocationId>
+    <LocationName>Europe</LocationName>
+    <ParentLocationId>1</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>3</LocationId>
+    <LocationName>North America</LocationName>
+    <ParentLocationId>1</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>4</LocationId>
+    <LocationName>France</LocationName>
+    <ParentLocationId>2</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>5</LocationId>
+    <LocationName>Germany</LocationName>
+    <ParentLocationId>2</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>6</LocationId>
+    <LocationName>Paris</LocationName>
+    <ParentLocationId>4</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>7</LocationId>
+    <LocationName>Berlin</LocationName>
+    <ParentLocationId>5</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>8</LocationId>
+    <LocationName>United States</LocationName>
+    <ParentLocationId>3</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>9</LocationId>
+    <LocationName>Canada</LocationName>
+    <ParentLocationId>3</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>10</LocationId>
+    <LocationName>New York</LocationName>
+    <ParentLocationId>8</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>11</LocationId>
+    <LocationName>Washington</LocationName>
+    <ParentLocationId>8</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>12</LocationId>
+    <LocationName>New York City</LocationName>
+    <ParentLocationId>10</ParentLocationId>
+  </Location>
+  <Location>
+    <LocationId>13</LocationId>
+    <LocationName>Redmond</LocationName>
+    <ParentLocationId>11</ParentLocationId>
+  </Location>
+</ArrayOfLocation>
